@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="a" xml:space="preserve">
+    <value>形容词</value>
+  </data>
+  <data name="ad" xml:space="preserve">
+    <value>副形词</value>
+  </data>
+  <data name="an" xml:space="preserve">
+    <value>名形词</value>
+  </data>
+  <data name="API_KEY" xml:space="preserve">
+    <value>lXSvzb3iZlvvoqlgB25YlWGS</value>
+    <comment>接口键ID</comment>
+  </data>
+  <data name="APP_ID" xml:space="preserve">
+    <value>15419388</value>
+    <comment>百度NLP帐号</comment>
+  </data>
+  <data name="c" xml:space="preserve">
+    <value>连词</value>
+    <comment>连词</comment>
+  </data>
+  <data name="d" xml:space="preserve">
+    <value>副词</value>
+    <comment>副词</comment>
+  </data>
+  <data name="f" xml:space="preserve">
+    <value>方位名词</value>
+    <comment>方位名词</comment>
+  </data>
+  <data name="m" xml:space="preserve">
+    <value>数量词</value>
+    <comment>数量词</comment>
+  </data>
+  <data name="n" xml:space="preserve">
+    <value>普通名词</value>
+    <comment>普通名词</comment>
+  </data>
+  <data name="nr" xml:space="preserve">
+    <value>人名</value>
+    <comment>人名</comment>
+  </data>
+  <data name="ns" xml:space="preserve">
+    <value>地名</value>
+    <comment>地名</comment>
+  </data>
+  <data name="nt" xml:space="preserve">
+    <value>机构团体名</value>
+    <comment>机构团体名</comment>
+  </data>
+  <data name="nw" xml:space="preserve">
+    <value>作品名</value>
+    <comment>作品名</comment>
+  </data>
+  <data name="nz" xml:space="preserve">
+    <value>其他专名</value>
+    <comment>其他专名</comment>
+  </data>
+  <data name="p" xml:space="preserve">
+    <value>介词</value>
+    <comment>介词</comment>
+  </data>
+  <data name="q" xml:space="preserve">
+    <value>量词</value>
+    <comment>量词</comment>
+  </data>
+  <data name="r" xml:space="preserve">
+    <value>代词</value>
+    <comment>代词</comment>
+  </data>
+  <data name="s" xml:space="preserve">
+    <value>处所名词</value>
+    <comment>处所名词</comment>
+  </data>
+  <data name="SECRET_KEY" xml:space="preserve">
+    <value>IoU4AvyqsmZbUA9G49ewPPQmWTIhrTEk</value>
+    <comment>百度NLP密钥</comment>
+  </data>
+  <data name="t" xml:space="preserve">
+    <value>时间名词</value>
+    <comment>时间名词</comment>
+  </data>
+  <data name="u" xml:space="preserve">
+    <value>助词</value>
+    <comment>助词</comment>
+  </data>
+  <data name="v" xml:space="preserve">
+    <value>普通动词</value>
+    <comment>普通动词</comment>
+  </data>
+  <data name="vd" xml:space="preserve">
+    <value>动副词</value>
+    <comment>动副词</comment>
+  </data>
+  <data name="vn" xml:space="preserve">
+    <value>名动词</value>
+    <comment>名动词</comment>
+  </data>
+  <data name="w" xml:space="preserve">
+    <value>标点符号</value>
+    <comment>标点符号</comment>
+  </data>
+  <data name="xc" xml:space="preserve">
+    <value>其他虚词</value>
+    <comment>其他虚词</comment>
+  </data>
+  <data name="COST" xml:space="preserve">
+    <value>费用</value>
+    <comment>费用</comment>
+  </data>
+  <data name="LOC" xml:space="preserve">
+    <value>地名|处所关系</value>
+    <comment>地名|处所关系</comment>
+  </data>
+  <data name="ORG" xml:space="preserve">
+    <value>机构名</value>
+    <comment>地名</comment>
+  </data>
+  <data name="PER" xml:space="preserve">
+    <value>人名</value>
+    <comment>人名</comment>
+  </data>
+  <data name="TIME" xml:space="preserve">
+    <value>时间</value>
+    <comment>时间</comment>
+  </data>
+  <data name="CON" xml:space="preserve">
+    <value>合同相关</value>
+    <comment>合同相关</comment>
+  </data>
+  <data name="ADJ" xml:space="preserve">
+    <value>附加关系</value>
+    <comment>附加关系</comment>
+  </data>
+  <data name="ADV" xml:space="preserve">
+    <value>状中结构</value>
+    <comment>状中结构</comment>
+  </data>
+  <data name="Ag" xml:space="preserve">
+    <value>形语素</value>
+    <comment>形语素</comment>
+  </data>
+  <data name="APP" xml:space="preserve">
+    <value>同位关系</value>
+    <comment>同位关系</comment>
+  </data>
+  <data name="ATT" xml:space="preserve">
+    <value>定中关系</value>
+    <comment>定中关系</comment>
+  </data>
+  <data name="b" xml:space="preserve">
+    <value>区别词</value>
+    <comment>区别词</comment>
+  </data>
+  <data name="BA" xml:space="preserve">
+    <value>“把”字结构</value>
+    <comment>“把”字结构</comment>
+  </data>
+  <data name="BEI" xml:space="preserve">
+    <value>“被”字结构</value>
+    <comment>“被”字结构</comment>
+  </data>
+  <data name="CMP" xml:space="preserve">
+    <value>动补结构</value>
+    <comment>动补结构</comment>
+  </data>
+  <data name="CNJ" xml:space="preserve">
+    <value>关联词</value>
+    <comment>关联词</comment>
+  </data>
+  <data name="COO" xml:space="preserve">
+    <value>并列关系</value>
+    <comment>并列关系</comment>
+  </data>
+  <data name="CS" xml:space="preserve">
+    <value>关联结构</value>
+    <comment>关联结构</comment>
+  </data>
+  <data name="DBL" xml:space="preserve">
+    <value>兼语结构</value>
+    <comment>兼语结构</comment>
+  </data>
+  <data name="DC" xml:space="preserve">
+    <value>依存分句</value>
+    <comment>依存分句</comment>
+  </data>
+  <data name="DE" xml:space="preserve">
+    <value>“的”字结构</value>
+    <comment>“的”字结构</comment>
+  </data>
+  <data name="DEI" xml:space="preserve">
+    <value>“得”字结构</value>
+    <comment>“得”字结构</comment>
+  </data>
+  <data name="dg" xml:space="preserve">
+    <value>副语素</value>
+    <comment>副语素</comment>
+  </data>
+  <data name="DI" xml:space="preserve">
+    <value>“地”字结构</value>
+    <comment>“地”字结构</comment>
+  </data>
+  <data name="DOB" xml:space="preserve">
+    <value>双宾语</value>
+    <comment>双宾语</comment>
+  </data>
+  <data name="e" xml:space="preserve">
+    <value>叹词</value>
+    <comment>叹词</comment>
+  </data>
+  <data name="FOB" xml:space="preserve">
+    <value>前置宾语</value>
+    <comment>前置宾语</comment>
+  </data>
+  <data name="g" xml:space="preserve">
+    <value>语素</value>
+    <comment>语素</comment>
+  </data>
+  <data name="h" xml:space="preserve">
+    <value>前接成分</value>
+    <comment>前接成分</comment>
+  </data>
+  <data name="HED" xml:space="preserve">
+    <value>核心</value>
+    <comment>核心</comment>
+  </data>
+  <data name="i" xml:space="preserve">
+    <value>成语</value>
+    <comment>成语</comment>
+  </data>
+  <data name="IC" xml:space="preserve">
+    <value>独立分句</value>
+    <comment>独立分句</comment>
+  </data>
+  <data name="IS" xml:space="preserve">
+    <value>独立结构</value>
+    <comment>独立结构</comment>
+  </data>
+  <data name="j" xml:space="preserve">
+    <value>简称略语</value>
+    <comment>简称略语</comment>
+  </data>
+  <data name="k" xml:space="preserve">
+    <value>后接成分</value>
+    <comment>后接成分</comment>
+  </data>
+  <data name="l" xml:space="preserve">
+    <value>习用语</value>
+    <comment>习用语</comment>
+  </data>
+  <data name="MT" xml:space="preserve">
+    <value>语态结构</value>
+    <comment>语态结构</comment>
+  </data>
+  <data name="Ng" xml:space="preserve">
+    <value>名语素</value>
+    <comment>名语素</comment>
+  </data>
+  <data name="o" xml:space="preserve">
+    <value>拟声词</value>
+    <comment>拟声词</comment>
+  </data>
+  <data name="POB" xml:space="preserve">
+    <value>介宾关系</value>
+    <comment>介宾关系</comment>
+  </data>
+  <data name="QUN" xml:space="preserve">
+    <value>数量关系</value>
+    <comment>数量关系</comment>
+  </data>
+  <data name="SBV" xml:space="preserve">
+    <value>主谓关系</value>
+    <comment>主谓关系</comment>
+  </data>
+  <data name="SIM" xml:space="preserve">
+    <value>比拟关系</value>
+    <comment>比拟关系</comment>
+  </data>
+  <data name="SUO" xml:space="preserve">
+    <value>“所”字结构</value>
+    <comment>“所”字结构</comment>
+  </data>
+  <data name="tg" xml:space="preserve">
+    <value>时语素</value>
+    <comment>时语素</comment>
+  </data>
+  <data name="TMP" xml:space="preserve">
+    <value>时间关系</value>
+    <comment>时间关系</comment>
+  </data>
+  <data name="TOP" xml:space="preserve">
+    <value>主题</value>
+    <comment>主题</comment>
+  </data>
+  <data name="un" xml:space="preserve">
+    <value>未知词</value>
+    <comment>未知词</comment>
+  </data>
+  <data name="vg" xml:space="preserve">
+    <value>动语素</value>
+    <comment>动语素</comment>
+  </data>
+  <data name="VNV" xml:space="preserve">
+    <value>叠词关系</value>
+    <comment>叠词关系</comment>
+  </data>
+  <data name="VOB" xml:space="preserve">
+    <value>动宾关系</value>
+    <comment>动宾关系</comment>
+  </data>
+  <data name="VV" xml:space="preserve">
+    <value>连谓结构</value>
+    <comment>连谓结构</comment>
+  </data>
+  <data name="WP" xml:space="preserve">
+    <value>标点</value>
+    <comment>标点</comment>
+  </data>
+  <data name="x" xml:space="preserve">
+    <value>非语素字</value>
+    <comment>非语素字</comment>
+  </data>
+  <data name="y" xml:space="preserve">
+    <value>语气词</value>
+    <comment>语气词</comment>
+  </data>
+  <data name="YGC" xml:space="preserve">
+    <value>一个词</value>
+    <comment>一个词</comment>
+  </data>
+  <data name="z" xml:space="preserve">
+    <value>状态词</value>
+    <comment>状态词</comment>
+  </data>
+</root>
