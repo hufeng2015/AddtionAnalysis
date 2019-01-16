@@ -110,5 +110,16 @@ namespace AddtionAnalysis
                 dataItems.DataSource = results;
             }
         }
+
+        private void btn_DnnlmCn_Click(object sender, EventArgs e)
+        {
+            if (CheckFormData())
+            {
+                var results = client.DnnlmCn(txtInPut.Text).ToObject<DnnlmCnResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                dataItems.DataSource = results.Items;
+                MessageBox.Show(results.Ppl.ToString());
+            }
+        }
     }
 }
