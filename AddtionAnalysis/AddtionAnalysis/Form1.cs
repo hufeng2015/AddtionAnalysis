@@ -142,5 +142,24 @@ namespace AddtionAnalysis
         {
             return string.IsNullOrWhiteSpace(txtInPut.Text) == false && string.IsNullOrWhiteSpace(txtInPut2.Text) == false;
         }
+
+        /// <summary>
+        /// 短文本相似度
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_Simnet_Click(object sender, EventArgs e)
+        {
+            if (CheckFormData2())
+            {
+                var options = new Dictionary<string, object>{
+        {"model", "CNN"}
+    };
+                var results = client.Simnet(txtInPut.Text, txtInPut2.Text, options).ToObject<SimnetResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                dataItems.DataSource = results;
+                txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
+            }
+        }
     }
 }

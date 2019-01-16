@@ -67,6 +67,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimnetResult.cs" />
     <Compile Include="WordEmbeddingResult.cs" />
     <Compile Include="WordSimEmbeddingResult.cs" />
     <EmbeddedResource Include="Form1.resx">

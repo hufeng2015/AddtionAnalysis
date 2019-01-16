@@ -43,6 +43,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_DnnlmCn = new System.Windows.Forms.Button();
             this.btn_WordSimEmbedding = new System.Windows.Forms.Button();
+            this.btn_Simnet = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -209,6 +210,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btn_WordEmbedding);
             this.flowLayoutPanel1.Controls.Add(this.btn_DnnlmCn);
             this.flowLayoutPanel1.Controls.Add(this.btn_WordSimEmbedding);
+            this.flowLayoutPanel1.Controls.Add(this.btn_Simnet);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -236,6 +238,17 @@
             this.btn_WordSimEmbedding.Text = "词义相似度";
             this.btn_WordSimEmbedding.UseVisualStyleBackColor = true;
             this.btn_WordSimEmbedding.Click += new System.EventHandler(this.btn_WordSimEmbedding_Click);
+            // 
+            // btn_Simnet
+            // 
+            this.btn_Simnet.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Simnet.Location = new System.Drawing.Point(3, 135);
+            this.btn_Simnet.Name = "btn_Simnet";
+            this.btn_Simnet.Size = new System.Drawing.Size(160, 38);
+            this.btn_Simnet.TabIndex = 9;
+            this.btn_Simnet.Text = "短文本相似度";
+            this.btn_Simnet.UseVisualStyleBackColor = true;
+            this.btn_Simnet.Click += new System.EventHandler(this.btn_Simnet_Click);
             // 
             // Form1
             // 
@@ -279,6 +292,7 @@
         private System.Windows.Forms.Button btn_WordSimEmbedding;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.TextBox txtInPut2;
+        private System.Windows.Forms.Button btn_Simnet;
     }
 }
 
