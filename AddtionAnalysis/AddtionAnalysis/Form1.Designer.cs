@@ -38,8 +38,11 @@
             this.btn_LexerCustom = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.txtInPut2 = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_DnnlmCn = new System.Windows.Forms.Button();
+            this.btn_WordSimEmbedding = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -49,6 +52,10 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.Panel2.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +68,7 @@
             this.btn_Lexer.TabIndex = 5;
             this.btn_Lexer.Text = "词法分析";
             this.btn_Lexer.UseVisualStyleBackColor = true;
+            this.btn_Lexer.Click += new System.EventHandler(this.Btn_Lexer_Click);
             // 
             // txtInPut
             // 
@@ -69,7 +77,7 @@
             this.txtInPut.Location = new System.Drawing.Point(0, 0);
             this.txtInPut.Multiline = true;
             this.txtInPut.Name = "txtInPut";
-            this.txtInPut.Size = new System.Drawing.Size(327, 152);
+            this.txtInPut.Size = new System.Drawing.Size(109, 152);
             this.txtInPut.TabIndex = 0;
             // 
             // dataItems
@@ -107,6 +115,7 @@
             this.btn_DepParser.TabIndex = 3;
             this.btn_DepParser.Text = "依存句法分析";
             this.btn_DepParser.UseVisualStyleBackColor = true;
+            this.btn_DepParser.Click += new System.EventHandler(this.Btn_DepParser_Click);
             // 
             // btn_WordEmbedding
             // 
@@ -128,6 +137,7 @@
             this.btn_LexerCustom.TabIndex = 2;
             this.btn_LexerCustom.Text = "词法分析（定制版）";
             this.btn_LexerCustom.UseVisualStyleBackColor = true;
+            this.btn_LexerCustom.Click += new System.EventHandler(this.Btn_LexerCustom_Click);
             // 
             // splitContainer1
             // 
@@ -155,7 +165,7 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.txtInPut);
+            this.splitContainer2.Panel1.Controls.Add(this.splitContainer3);
             // 
             // splitContainer2.Panel2
             // 
@@ -164,6 +174,33 @@
             this.splitContainer2.SplitterDistance = 152;
             this.splitContainer2.TabIndex = 0;
             // 
+            // splitContainer3
+            // 
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.txtInPut);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.Controls.Add(this.txtInPut2);
+            this.splitContainer3.Size = new System.Drawing.Size(327, 152);
+            this.splitContainer3.SplitterDistance = 109;
+            this.splitContainer3.TabIndex = 0;
+            // 
+            // txtInPut2
+            // 
+            this.txtInPut2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtInPut2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtInPut2.Location = new System.Drawing.Point(0, 0);
+            this.txtInPut2.Multiline = true;
+            this.txtInPut2.Name = "txtInPut2";
+            this.txtInPut2.Size = new System.Drawing.Size(214, 152);
+            this.txtInPut2.TabIndex = 1;
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.btn_Lexer);
@@ -171,6 +208,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btn_DepParser);
             this.flowLayoutPanel1.Controls.Add(this.btn_WordEmbedding);
             this.flowLayoutPanel1.Controls.Add(this.btn_DnnlmCn);
+            this.flowLayoutPanel1.Controls.Add(this.btn_WordSimEmbedding);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -188,6 +226,17 @@
             this.btn_DnnlmCn.UseVisualStyleBackColor = true;
             this.btn_DnnlmCn.Click += new System.EventHandler(this.btn_DnnlmCn_Click);
             // 
+            // btn_WordSimEmbedding
+            // 
+            this.btn_WordSimEmbedding.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_WordSimEmbedding.Location = new System.Drawing.Point(169, 91);
+            this.btn_WordSimEmbedding.Name = "btn_WordSimEmbedding";
+            this.btn_WordSimEmbedding.Size = new System.Drawing.Size(160, 38);
+            this.btn_WordSimEmbedding.TabIndex = 8;
+            this.btn_WordSimEmbedding.Text = "词义相似度";
+            this.btn_WordSimEmbedding.UseVisualStyleBackColor = true;
+            this.btn_WordSimEmbedding.Click += new System.EventHandler(this.btn_WordSimEmbedding_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -202,10 +251,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel1.PerformLayout();
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            this.splitContainer3.Panel1.PerformLayout();
+            this.splitContainer3.Panel2.ResumeLayout(false);
+            this.splitContainer3.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
+            this.splitContainer3.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -222,6 +276,9 @@
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btn_DnnlmCn;
+        private System.Windows.Forms.Button btn_WordSimEmbedding;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.TextBox txtInPut2;
     }
 }
 

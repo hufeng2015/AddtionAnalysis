@@ -34,12 +34,6 @@ namespace AddtionAnalysis
             client = new Nlp(PartOfSpeech.API_KEY, PartOfSpeech.SECRET_KEY);
             //设置超时时间
             client.Timeout = 60000;
-            //词法分析
-            btn_Lexer.Click += Btn_Lexer_Click;
-            //词法分析（定制版）
-            btn_LexerCustom.Click += Btn_LexerCustom_Click;
-            //依存语法
-            btn_DepParser.Click += Btn_DepParser_Click;
         }
         /// <summary>
         /// 依存语法
@@ -110,7 +104,11 @@ namespace AddtionAnalysis
                 dataItems.DataSource = results;
             }
         }
-
+        /// <summary>
+        /// DNN语言模型
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_DnnlmCn_Click(object sender, EventArgs e)
         {
             if (CheckFormData())
@@ -120,6 +118,29 @@ namespace AddtionAnalysis
                 dataItems.DataSource = results.Items;
                 MessageBox.Show(results.Ppl.ToString());
             }
+        }
+        /// <summary>
+        /// 词义相似度
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_WordSimEmbedding_Click(object sender, EventArgs e)
+        {
+            if (CheckFormData2())
+            {
+                var results = client.WordSimEmbedding(txtInPut.Text, txtInPut2.Text).ToObject<WordSimEmbeddingResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                dataItems.DataSource = results;
+                txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
+            }
+        }
+        /// <summary>
+        /// 界面输入校验
+        /// </summary>
+        /// <returns></returns>
+        private bool CheckFormData2()
+        {
+            return string.IsNullOrWhiteSpace(txtInPut.Text) == false && string.IsNullOrWhiteSpace(txtInPut2.Text) == false;
         }
     }
 }
