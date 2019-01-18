@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentTagResult.cs" />
     <Compile Include="DepParserResult.cs" />
     <Compile Include="DnnlmCnResult.cs" />
     <Compile Include="Form1.cs">

@@ -450,4 +450,56 @@
     <value>状态词</value>
     <comment>状态词</comment>
   </data>
+  <data name="KTV" xml:space="preserve">
+    <value>2</value>
+    <comment>KTV</comment>
+  </data>
+  <data name="丽人" xml:space="preserve">
+    <value>3</value>
+    <comment>丽人</comment>
+  </data>
+  <data name="健康" xml:space="preserve">
+    <value>6</value>
+    <comment>健康</comment>
+  </data>
+  <data name="商业" xml:space="preserve">
+    <value>8</value>
+    <comment>商业</comment>
+  </data>
+  <data name="房产" xml:space="preserve">
+    <value>9</value>
+    <comment>房产</comment>
+  </data>
+  <data name="教育" xml:space="preserve">
+    <value>7</value>
+    <comment>教育</comment>
+  </data>
+  <data name="数码" xml:space="preserve">
+    <value>13</value>
+    <comment>数码</comment>
+  </data>
+  <data name="旅游" xml:space="preserve">
+    <value>5</value>
+    <comment>旅游</comment>
+  </data>
+  <data name="汽车" xml:space="preserve">
+    <value>10</value>
+    <comment>汽车</comment>
+  </data>
+  <data name="生活" xml:space="preserve">
+    <value>11</value>
+    <comment>生活</comment>
+  </data>
+  <data name="美食餐饮" xml:space="preserve">
+    <value>4</value>
+    <comment>美食餐饮</comment>
+  </data>
+  <data name="购物" xml:space="preserve">
+    <value>12</value>
+    <comment>购物</comment>
+  </data>
+  <data name="酒店" xml:space="preserve">
+    <value>1</value>
+    <comment>酒店</comment>
+  </data>
 </root>

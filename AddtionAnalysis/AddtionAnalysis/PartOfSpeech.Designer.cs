@@ -19,7 +19,7 @@ namespace AddtionAnalysis {
     // 类通过类似于 ResGen 或 Visual Studio 的工具自动生成的。
     // 若要添加或移除成员，请编辑 .ResX 文件，然后重新运行 ResGen
     // (以 /str 作为命令选项)，或重新生成 VS 项目。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class PartOfSpeech {
@@ -47,7 +47,7 @@ namespace AddtionAnalysis {
         }
         
         /// <summary>
-        ///   使用此强类型资源类，为所有资源查找
+        ///   重写当前线程的 CurrentUICulture 属性
         ///   重写当前线程的 CurrentUICulture 属性。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -408,6 +408,15 @@ namespace AddtionAnalysis {
         internal static string k {
             get {
                 return ResourceManager.GetString("k", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 2 的本地化字符串。
+        /// </summary>
+        internal static string KTV {
+            get {
+                return ResourceManager.GetString("KTV", resourceCulture);
             }
         }
         
@@ -813,6 +822,114 @@ namespace AddtionAnalysis {
         internal static string z {
             get {
                 return ResourceManager.GetString("z", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 3 的本地化字符串。
+        /// </summary>
+        internal static string 丽人 {
+            get {
+                return ResourceManager.GetString("丽人", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 6 的本地化字符串。
+        /// </summary>
+        internal static string 健康 {
+            get {
+                return ResourceManager.GetString("健康", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 8 的本地化字符串。
+        /// </summary>
+        internal static string 商业 {
+            get {
+                return ResourceManager.GetString("商业", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 9 的本地化字符串。
+        /// </summary>
+        internal static string 房产 {
+            get {
+                return ResourceManager.GetString("房产", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 7 的本地化字符串。
+        /// </summary>
+        internal static string 教育 {
+            get {
+                return ResourceManager.GetString("教育", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 13 的本地化字符串。
+        /// </summary>
+        internal static string 数码 {
+            get {
+                return ResourceManager.GetString("数码", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 5 的本地化字符串。
+        /// </summary>
+        internal static string 旅游 {
+            get {
+                return ResourceManager.GetString("旅游", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 10 的本地化字符串。
+        /// </summary>
+        internal static string 汽车 {
+            get {
+                return ResourceManager.GetString("汽车", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 11 的本地化字符串。
+        /// </summary>
+        internal static string 生活 {
+            get {
+                return ResourceManager.GetString("生活", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 4 的本地化字符串。
+        /// </summary>
+        internal static string 美食餐饮 {
+            get {
+                return ResourceManager.GetString("美食餐饮", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 12 的本地化字符串。
+        /// </summary>
+        internal static string 购物 {
+            get {
+                return ResourceManager.GetString("购物", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 1 的本地化字符串。
+        /// </summary>
+        internal static string 酒店 {
+            get {
+                return ResourceManager.GetString("酒店", resourceCulture);
             }
         }
     }

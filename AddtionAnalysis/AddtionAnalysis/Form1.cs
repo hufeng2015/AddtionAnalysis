@@ -161,5 +161,23 @@ namespace AddtionAnalysis
                 txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
             }
         }
+
+        /// <summary>
+        /// 评论观点抽取
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_CommentTag_Click(object sender, EventArgs e)
+        {
+            if (CheckFormData())
+            {
+                var options = new Dictionary<string, object> { { "type", int.Parse(PartOfSpeech.商业) } };
+        
+                var results = client.CommentTag(txtInPut.Text, options).ToObject<CommentTagResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                dataItems.DataSource = results.Items;
+                txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
+            }
+        }
     }
 }
