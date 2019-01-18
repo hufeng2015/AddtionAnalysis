@@ -179,5 +179,19 @@ namespace AddtionAnalysis
                 txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
             }
         }
+        /// <summary>
+        /// 情感倾向分析
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_SentimentClassify_Click(object sender, EventArgs e)
+        {
+            if (CheckFormData())
+            {
+                var results = client.SentimentClassify(txtInPut.Text).ToObject<SentimentClassifyResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                dataItems.DataSource = results.Items;
+            }
+        }
     }
 }

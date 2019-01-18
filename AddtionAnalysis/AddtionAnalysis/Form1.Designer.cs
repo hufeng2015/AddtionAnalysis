@@ -45,6 +45,7 @@
             this.btn_WordSimEmbedding = new System.Windows.Forms.Button();
             this.btn_Simnet = new System.Windows.Forms.Button();
             this.btn_CommentTag = new System.Windows.Forms.Button();
+            this.btn_SentimentClassify = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -65,7 +66,7 @@
             // 
             this.btn_Lexer.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Lexer.Location = new System.Drawing.Point(2, 2);
-            this.btn_Lexer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Lexer.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Lexer.Name = "btn_Lexer";
             this.btn_Lexer.Size = new System.Drawing.Size(120, 30);
             this.btn_Lexer.TabIndex = 5;
@@ -78,7 +79,7 @@
             this.txtInPut.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtInPut.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtInPut.Location = new System.Drawing.Point(0, 0);
-            this.txtInPut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtInPut.Margin = new System.Windows.Forms.Padding(2);
             this.txtInPut.Multiline = true;
             this.txtInPut.Name = "txtInPut";
             this.txtInPut.Size = new System.Drawing.Size(81, 121);
@@ -97,7 +98,7 @@
             this.dataItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataItems.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataItems.Location = new System.Drawing.Point(0, 0);
-            this.dataItems.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataItems.Margin = new System.Windows.Forms.Padding(2);
             this.dataItems.Name = "dataItems";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
@@ -115,7 +116,7 @@
             // 
             this.btn_DepParser.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_DepParser.Location = new System.Drawing.Point(2, 36);
-            this.btn_DepParser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_DepParser.Margin = new System.Windows.Forms.Padding(2);
             this.btn_DepParser.Name = "btn_DepParser";
             this.btn_DepParser.Size = new System.Drawing.Size(120, 30);
             this.btn_DepParser.TabIndex = 3;
@@ -127,7 +128,7 @@
             // 
             this.btn_WordEmbedding.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_WordEmbedding.Location = new System.Drawing.Point(126, 36);
-            this.btn_WordEmbedding.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_WordEmbedding.Margin = new System.Windows.Forms.Padding(2);
             this.btn_WordEmbedding.Name = "btn_WordEmbedding";
             this.btn_WordEmbedding.Size = new System.Drawing.Size(120, 30);
             this.btn_WordEmbedding.TabIndex = 6;
@@ -139,7 +140,7 @@
             // 
             this.btn_LexerCustom.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_LexerCustom.Location = new System.Drawing.Point(126, 2);
-            this.btn_LexerCustom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_LexerCustom.Margin = new System.Windows.Forms.Padding(2);
             this.btn_LexerCustom.Name = "btn_LexerCustom";
             this.btn_LexerCustom.Size = new System.Drawing.Size(120, 30);
             this.btn_LexerCustom.TabIndex = 2;
@@ -151,7 +152,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -170,7 +171,7 @@
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -190,7 +191,7 @@
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer3.Name = "splitContainer3";
             // 
             // splitContainer3.Panel1
@@ -210,7 +211,7 @@
             this.txtInPut2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtInPut2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtInPut2.Location = new System.Drawing.Point(0, 0);
-            this.txtInPut2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtInPut2.Margin = new System.Windows.Forms.Padding(2);
             this.txtInPut2.Multiline = true;
             this.txtInPut2.Name = "txtInPut2";
             this.txtInPut2.Size = new System.Drawing.Size(161, 121);
@@ -226,9 +227,10 @@
             this.flowLayoutPanel1.Controls.Add(this.btn_WordSimEmbedding);
             this.flowLayoutPanel1.Controls.Add(this.btn_Simnet);
             this.flowLayoutPanel1.Controls.Add(this.btn_CommentTag);
+            this.flowLayoutPanel1.Controls.Add(this.btn_SentimentClassify);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 248);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -237,7 +239,7 @@
             // 
             this.btn_DnnlmCn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_DnnlmCn.Location = new System.Drawing.Point(2, 70);
-            this.btn_DnnlmCn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_DnnlmCn.Margin = new System.Windows.Forms.Padding(2);
             this.btn_DnnlmCn.Name = "btn_DnnlmCn";
             this.btn_DnnlmCn.Size = new System.Drawing.Size(120, 30);
             this.btn_DnnlmCn.TabIndex = 7;
@@ -249,7 +251,7 @@
             // 
             this.btn_WordSimEmbedding.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_WordSimEmbedding.Location = new System.Drawing.Point(126, 70);
-            this.btn_WordSimEmbedding.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_WordSimEmbedding.Margin = new System.Windows.Forms.Padding(2);
             this.btn_WordSimEmbedding.Name = "btn_WordSimEmbedding";
             this.btn_WordSimEmbedding.Size = new System.Drawing.Size(120, 30);
             this.btn_WordSimEmbedding.TabIndex = 8;
@@ -261,7 +263,7 @@
             // 
             this.btn_Simnet.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btn_Simnet.Location = new System.Drawing.Point(2, 104);
-            this.btn_Simnet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Simnet.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Simnet.Name = "btn_Simnet";
             this.btn_Simnet.Size = new System.Drawing.Size(120, 30);
             this.btn_Simnet.TabIndex = 9;
@@ -281,13 +283,25 @@
             this.btn_CommentTag.UseVisualStyleBackColor = true;
             this.btn_CommentTag.Click += new System.EventHandler(this.btn_CommentTag_Click);
             // 
+            // btn_SentimentClassify
+            // 
+            this.btn_SentimentClassify.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_SentimentClassify.Location = new System.Drawing.Point(2, 138);
+            this.btn_SentimentClassify.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_SentimentClassify.Name = "btn_SentimentClassify";
+            this.btn_SentimentClassify.Size = new System.Drawing.Size(120, 30);
+            this.btn_SentimentClassify.TabIndex = 11;
+            this.btn_SentimentClassify.Text = "情感倾向分析";
+            this.btn_SentimentClassify.UseVisualStyleBackColor = true;
+            this.btn_SentimentClassify.Click += new System.EventHandler(this.btn_SentimentClassify_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 248);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "词法分析";
             ((System.ComponentModel.ISupportInitialize)(this.dataItems)).EndInit();
@@ -326,6 +340,7 @@
         private System.Windows.Forms.TextBox txtInPut2;
         private System.Windows.Forms.Button btn_Simnet;
         private System.Windows.Forms.Button btn_CommentTag;
+        private System.Windows.Forms.Button btn_SentimentClassify;
     }
 }
 
