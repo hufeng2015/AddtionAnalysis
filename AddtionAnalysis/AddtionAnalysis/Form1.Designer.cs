@@ -46,6 +46,8 @@
             this.btn_Simnet = new System.Windows.Forms.Button();
             this.btn_CommentTag = new System.Windows.Forms.Button();
             this.btn_SentimentClassify = new System.Windows.Forms.Button();
+            this.btn_Keyword = new System.Windows.Forms.Button();
+            this.btn_Topic = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -228,6 +230,8 @@
             this.flowLayoutPanel1.Controls.Add(this.btn_Simnet);
             this.flowLayoutPanel1.Controls.Add(this.btn_CommentTag);
             this.flowLayoutPanel1.Controls.Add(this.btn_SentimentClassify);
+            this.flowLayoutPanel1.Controls.Add(this.btn_Keyword);
+            this.flowLayoutPanel1.Controls.Add(this.btn_Topic);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -295,6 +299,30 @@
             this.btn_SentimentClassify.UseVisualStyleBackColor = true;
             this.btn_SentimentClassify.Click += new System.EventHandler(this.btn_SentimentClassify_Click);
             // 
+            // btn_Keyword
+            // 
+            this.btn_Keyword.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Keyword.Location = new System.Drawing.Point(126, 138);
+            this.btn_Keyword.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Keyword.Name = "btn_Keyword";
+            this.btn_Keyword.Size = new System.Drawing.Size(120, 30);
+            this.btn_Keyword.TabIndex = 12;
+            this.btn_Keyword.Text = "文章标签";
+            this.btn_Keyword.UseVisualStyleBackColor = true;
+            this.btn_Keyword.Click += new System.EventHandler(this.btn_Keyword_Click);
+            // 
+            // btn_Topic
+            // 
+            this.btn_Topic.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Topic.Location = new System.Drawing.Point(2, 172);
+            this.btn_Topic.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Topic.Name = "btn_Topic";
+            this.btn_Topic.Size = new System.Drawing.Size(120, 30);
+            this.btn_Topic.TabIndex = 13;
+            this.btn_Topic.Text = "文章分类";
+            this.btn_Topic.UseVisualStyleBackColor = true;
+            this.btn_Topic.Click += new System.EventHandler(this.btn_Topic_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -341,6 +369,8 @@
         private System.Windows.Forms.Button btn_Simnet;
         private System.Windows.Forms.Button btn_CommentTag;
         private System.Windows.Forms.Button btn_SentimentClassify;
+        private System.Windows.Forms.Button btn_Keyword;
+        private System.Windows.Forms.Button btn_Topic;
     }
 }
 

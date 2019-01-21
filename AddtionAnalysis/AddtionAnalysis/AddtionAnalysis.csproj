@@ -60,6 +60,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KeywordResult.cs" />
     <Compile Include="LexerResult.cs" />
     <Compile Include="PartOfSpeech.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -70,6 +71,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SentimentClassifyResult.cs" />
     <Compile Include="SimnetResult.cs" />
+    <Compile Include="TopicResult.cs" />
     <Compile Include="WordEmbeddingResult.cs" />
     <Compile Include="WordSimEmbeddingResult.cs" />
     <EmbeddedResource Include="Form1.resx">

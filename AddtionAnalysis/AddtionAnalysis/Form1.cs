@@ -193,5 +193,34 @@ namespace AddtionAnalysis
                 dataItems.DataSource = results.Items;
             }
         }
+
+        /// <summary>
+        /// 文章标签
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_Keyword_Click(object sender, EventArgs e)
+        {
+            if (CheckFormData2())
+            {
+                var results = client.Keyword(txtInPut.Text, txtInPut2.Text).ToObject<KeywordResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                dataItems.DataSource = results.Items;
+                txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
+            }
+        }
+
+        private void btn_Topic_Click(object sender, EventArgs e)
+        {
+            if (CheckFormData2())
+            {
+                var results = client.Topic(txtInPut.Text, txtInPut2.Text).ToObject<TopicResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                var resultsAll = results.Result.lv1_tag_list;
+                resultsAll.AddRange(results.Result.lv2_tag_list);
+                dataItems.DataSource = resultsAll;
+                txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
+            }
+        }
     }
 }
