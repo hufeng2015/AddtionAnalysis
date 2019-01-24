@@ -54,6 +54,8 @@
     <Compile Include="CommentTagResult.cs" />
     <Compile Include="DepParserResult.cs" />
     <Compile Include="DnnlmCnResult.cs" />
+    <Compile Include="EcnetResult.cs" />
+    <Compile Include="EmotionResult.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +64,7 @@
     </Compile>
     <Compile Include="KeywordResult.cs" />
     <Compile Include="LexerResult.cs" />
+    <Compile Include="NewsSummaryResult.cs" />
     <Compile Include="PartOfSpeech.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

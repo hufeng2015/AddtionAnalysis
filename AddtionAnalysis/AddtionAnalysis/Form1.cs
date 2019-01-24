@@ -222,5 +222,58 @@ namespace AddtionAnalysis
                 txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
             }
         }
+
+        /// <summary>
+        /// 文本纠错
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_Ecnet_Click(object sender, EventArgs e)
+        {
+            if (CheckFormData())
+            {
+                var results = client.Ecnet(txtInPut.Text).ToObject<EcnetResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                dataItems.DataSource = results.Items;
+                txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
+            }
+        }
+
+        private void btn_Emotion_Click(object sender, EventArgs e)
+        {
+
+            if (CheckFormData())
+            {
+                // 调用对话情绪识别接口，可能会抛出网络等异常，请使用try/catch捕获
+                var results = client.Emotion(txtInPut.Text).ToObject<EmotionResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                dataItems.DataSource = results.Items;
+                txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
+
+
+                //// 如果有可选参数
+                //var options = new Dictionary<string, object>{
+                //    {"scene", "talk"}
+                //};
+                //// 带参数调用对话情绪识别接口
+                //result = client.Emotion(txtInPut.Text, options).ToObject<EmotionResult>();
+                //Console.WriteLine(result);
+            }
+
+
+
+        }
+
+        private void btn_NewsSummary_Click(object sender, EventArgs e)
+        {
+            if (CheckFormData())
+            {
+                var maxSummaryLen = 300;
+                var results = client.NewsSummary(txtInPut.Text, maxSummaryLen).ToObject<NewsSummaryResult>();
+                Text = $"调用日志ID为：{results.LogId}";
+                dataItems.DataSource = results;
+                txtInPut2.Text = Newtonsoft.Json.JsonConvert.SerializeObject(results);
+            }
+        }
     }
 }
